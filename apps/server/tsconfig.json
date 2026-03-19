@@ -10,7 +10,7 @@
     "rootDir": "src",
     "baseUrl": ".",
     "paths": {
-      "@cabo/shared": ["../../packages/shared/src/index.ts"]
+      "@cabo/shared": ["../../packages/shared/dist/index"]
     }
   },
   "include": ["src"],
