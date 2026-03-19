@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(powershell -Command \"Set-Location ''C:\\\\Users\\\\pranit.dalal\\\\cabo''; git status 2>&1 | head -20\")",
+      "Read(//tmp/**)"
+    ]
+  }
+}

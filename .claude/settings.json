@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(tee C:Userspranit.dalalcabo__status.txt)",
+      "Bash(powershell -Command \":*)"
+    ]
+  }
+}
