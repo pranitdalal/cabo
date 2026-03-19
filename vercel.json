@@ -1,6 +1,6 @@
 {
   "framework": "nextjs",
   "installCommand": "npm install",
-  "buildCommand": "npm run build --workspace=apps/client",
+  "buildCommand": "npm run build:shared && cd apps/client && npm run build",
   "outputDirectory": "apps/client/.next"
 }
