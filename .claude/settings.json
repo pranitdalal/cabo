@@ -2,7 +2,17 @@
   "permissions": {
     "allow": [
       "Bash(tee C:Userspranit.dalalcabo__status.txt)",
-      "Bash(powershell -Command \":*)"
+      "Bash(powershell -Command \":*)",
+      "Bash(powershell -Command \"gh auth status 2>&1 | Out-File -FilePath ''C:\\\\Users\\\\pranit.dalal\\\\gh_auth_out.txt'' -Encoding utf8 -Force\")",
+      "Read(//c/Users/pranit.dalal/**)",
+      "Bash(gh auth:*)",
+      "Bash(cmd.exe /c \"gh auth status > C:\\\\Users\\\\pranit.dalal\\\\gh_auth_out.txt 2>&1\")",
+      "Bash(cmd.exe /c \"gh auth status 2>&1 & echo done\")",
+      "Bash(python3 -c \"import subprocess; r = subprocess.run\\([''gh'',''auth'',''status''], capture_output=True, text=True\\); open\\(''/c/Users/pranit.dalal/cabo/gh_result.txt'',''w''\\).write\\(r.stdout + r.stderr\\)\")",
+      "Bash(python -c \"import subprocess; r = subprocess.run\\([''gh'',''auth'',''status''], capture_output=True, text=True\\); f=open\\(''C:/Users/pranit.dalal/cabo/gh_result.txt'',''w''\\); f.write\\(''STDOUT:''+r.stdout+''\\\\nSTDERR:''+r.stderr\\); f.close\\(\\)\")"
+    ],
+    "additionalDirectories": [
+      "\\tmp"
     ]
   }
 }
